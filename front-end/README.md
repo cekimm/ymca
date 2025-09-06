@@ -1,9 +1,6 @@
 # Front-End Design Guidelines
 
 *A note from the designer, Cece!*
-
-**Add your own guidelines here**
-
 <!--
 
 System Guidelines
