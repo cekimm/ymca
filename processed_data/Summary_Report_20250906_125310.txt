@@ -1,0 +1,19 @@
+YMCA Volunteer Data Summary Report
+==================================================
+Generated: 2025-09-06 12:53:10
+
+Total Records: 990
+Date Range: 2025-08-06 to 2025-09-06
+Total Hours: 6644.75
+Average Hours per Record: 6.71
+Min Hours: 0.25
+Max Hours: 180.0
+Unique Activities: 450
+Most Common Activity: {'id': 27699, 'pledgeCount': 1, 'deliveredCount': 1, 'assignedById': 13902, 'contact': {'id': 4187, 'externalId': 'hdsMEd2dQ9B2FWHhXmdTXKQ', 'email': 'hallyn.schwartz@outlook.com', 'name': {'title': '', 'last': 'Schwartz', 'first': 'Halan', 'middle': '', 'suffix': '', 'nickname': 'Hal'}}, 'need': {'id': 36884, 'needType': 'Position', 'name': 'Garden Volunteer - Assigned by Y Staff 2025', 'startDateTime': '2025-04-01', 'endDateTime': '2026-01-01', 'project': {'id': 1841, 'name': "PCY - Let's Get Gardening", 'branch': {'id': 19, 'code': '4827', 'name': 'Powel Crosley YMCA', 'timeZoneId': 'America/New_York', 'active': True}}}}
+
+📋 Notes for Monthly Review:
+• Check for reporting errors before pulling data
+• Verify branch credit calculations
+• Review manual adjustments for special programs (swim, etc.)
+• Each data set requires its own deduplication logic
+• Numbers vary depending on counting method (activity, person, location)

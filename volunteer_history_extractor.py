@@ -34,7 +34,12 @@ def validate_config():
         logger.error("BASE URL not configured - please replace <your-volunteermatters-host> with actual host")
         sys.exit(1)
     
-    if "<API_KEY>" in AUTH[0] or "<API_SECRET>" in AUTH[1]:
+    # Check if AUTH is properly configured (HTTPBasicAuth object)
+    if not hasattr(AUTH, 'username') or not hasattr(AUTH, 'password'):
+        logger.error("AUTH not properly configured - should be HTTPBasicAuth object")
+        sys.exit(1)
+    
+    if "<API_KEY>" in AUTH.username or "<API_SECRET>" in AUTH.password:
         logger.error("API credentials not configured - please replace <API_KEY> and <API_SECRET> with actual values")
         sys.exit(1)
     
@@ -44,7 +49,7 @@ def validate_config():
     
     logger.info("Configuration validation passed")
 
-def make_api_request(url: str, headers: Dict, auth: tuple, params: Dict, max_retries: int = 3) -> Dict[str, Any]:
+def make_api_request(url: str, headers: Dict, auth: HTTPBasicAuth, params: Dict, max_retries: int = 3) -> Dict[str, Any]:
     """Make API request with retry logic and proper error handling"""
     for attempt in range(max_retries):
         try:
@@ -151,7 +156,7 @@ def main():
             logger.info(f"Fetching page {page_count}...")
             
             try:
-                data = make_api_request(f"{BASE}/volunteer-history", HDRS, AUTH, params)
+                data = make_api_request(f"{BASE}/volunteerHistory", HDRS, AUTH, params)
                 items = extract_items_from_response(data)
                 
                 if not items:

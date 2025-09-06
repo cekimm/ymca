@@ -1,0 +1,43 @@
+2025-09-06 12:50:31,998 - INFO - Starting volunteer history extraction...
+2025-09-06 12:50:31,998 - INFO - Validating configuration...
+2025-09-06 12:50:31,998 - ERROR - Unexpected error: 'HTTPBasicAuth' object is not subscriptable
+2025-09-06 12:50:52,387 - INFO - Starting volunteer history extraction...
+2025-09-06 12:50:52,388 - INFO - Validating configuration...
+2025-09-06 12:50:52,388 - INFO - Configuration validation passed
+2025-09-06 12:50:52,388 - INFO - Date range validated: 2025-01-01 to 2025-09-01
+2025-09-06 12:50:52,388 - INFO - Starting data extraction with parameters: {'startDate': '2025-01-01', 'endDate': '2025-09-01', 'page': 1, 'pageSize': 1000}
+2025-09-06 12:50:52,388 - INFO - Fetching page 1...
+2025-09-06 12:50:53,201 - ERROR - HTTP error on attempt 1: 404 Client Error: Not Found for url: https://api.volunteermatters.io/api/v2/volunteer-history?startDate=2025-01-01&endDate=2025-09-01&page=1&pageSize=1000
+2025-09-06 12:50:53,202 - ERROR - Response content: No response
+2025-09-06 12:50:54,806 - ERROR - HTTP error on attempt 2: 404 Client Error: Not Found for url: https://api.volunteermatters.io/api/v2/volunteer-history?startDate=2025-01-01&endDate=2025-09-01&page=1&pageSize=1000
+2025-09-06 12:50:54,806 - ERROR - Response content: No response
+2025-09-06 12:50:57,604 - ERROR - HTTP error on attempt 3: 404 Client Error: Not Found for url: https://api.volunteermatters.io/api/v2/volunteer-history?startDate=2025-01-01&endDate=2025-09-01&page=1&pageSize=1000
+2025-09-06 12:50:57,605 - ERROR - Response content: No response
+2025-09-06 12:50:57,605 - ERROR - Error processing page 1: 404 Client Error: Not Found for url: https://api.volunteermatters.io/api/v2/volunteer-history?startDate=2025-01-01&endDate=2025-09-01&page=1&pageSize=1000
+2025-09-06 12:50:57,605 - ERROR - Unexpected error: 404 Client Error: Not Found for url: https://api.volunteermatters.io/api/v2/volunteer-history?startDate=2025-01-01&endDate=2025-09-01&page=1&pageSize=1000
+2025-09-06 12:51:07,395 - INFO - Starting volunteer history extraction...
+2025-09-06 12:51:07,395 - INFO - Validating configuration...
+2025-09-06 12:51:07,395 - INFO - Configuration validation passed
+2025-09-06 12:51:07,395 - INFO - Date range validated: 2025-01-01 to 2025-09-01
+2025-09-06 12:51:07,395 - INFO - Starting data extraction with parameters: {'startDate': '2025-01-01', 'endDate': '2025-09-01', 'page': 1, 'pageSize': 1000}
+2025-09-06 12:51:07,395 - INFO - Fetching page 1...
+2025-09-06 12:51:09,235 - INFO - Found 1000 items in response
+2025-09-06 12:51:09,236 - INFO - Added 1000 items from page 1. Total items: 1000
+2025-09-06 12:51:09,236 - INFO - No more pages indicated, stopping pagination
+2025-09-06 12:51:09,236 - INFO - Total rows retrieved: 1000
+2025-09-06 12:51:09,239 - INFO - DataFrame created with shape: (1000, 5)
+2025-09-06 12:51:09,239 - INFO - DataFrame columns: ['volunteerDate', 'volunteerComments', 'creditedHours', 'manuallyReported', 'assignment']
+2025-09-06 12:51:09,372 - INFO - Successfully saved: VolunteerHistory_2025-01_to_2025-08.xlsx | rows: 1000
+2025-09-06 12:51:25,600 - INFO - Starting volunteer history extraction...
+2025-09-06 12:51:25,600 - INFO - Validating configuration...
+2025-09-06 12:51:25,600 - INFO - Configuration validation passed
+2025-09-06 12:51:25,601 - INFO - Date range validated: 2025-01-01 to 2025-09-01
+2025-09-06 12:51:25,601 - INFO - Starting data extraction with parameters: {'startDate': '2025-01-01', 'endDate': '2025-09-01', 'page': 1, 'pageSize': 1000}
+2025-09-06 12:51:25,601 - INFO - Fetching page 1...
+2025-09-06 12:51:27,430 - INFO - Found 1000 items in response
+2025-09-06 12:51:27,430 - INFO - Added 1000 items from page 1. Total items: 1000
+2025-09-06 12:51:27,430 - INFO - No more pages indicated, stopping pagination
+2025-09-06 12:51:27,430 - INFO - Total rows retrieved: 1000
+2025-09-06 12:51:27,434 - INFO - DataFrame created with shape: (1000, 5)
+2025-09-06 12:51:27,434 - INFO - DataFrame columns: ['volunteerDate', 'volunteerComments', 'creditedHours', 'manuallyReported', 'assignment']
+2025-09-06 12:51:27,559 - INFO - Successfully saved: VolunteerHistory_2025-01_to_2025-08.xlsx | rows: 1000
